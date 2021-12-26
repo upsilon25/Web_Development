@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(149, 195, 216);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 5vh;
+}
+.container{
+    width: 25%;
+    background-image: linear-gradient(135deg, #b3ffab 10%, #12fff7 100%);
+    
+}
+
+.header{
+    margin-left: 10%;
+}
+li{
+       list-style-type: none; 
+}
+button{
+    width: 100%;
+    display: block;
+    border: none;
+    padding: 2%;
+    font-size: 1rem;
+    color: linen;
+    background-color: rgb(14, 106, 182);
+}
