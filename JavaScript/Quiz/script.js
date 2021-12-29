@@ -31,6 +31,8 @@ loadQuiz()
 
 function loadQuiz(){
     const currentQuizdata = quizdata[currentQuiz];
-
+    questionE.innerHTML = currentQuizdata.question;
+    
+    currentQuiz++
 }
 const answers = document.querySelectorAll('answer');
