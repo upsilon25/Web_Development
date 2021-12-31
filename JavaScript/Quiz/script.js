@@ -18,7 +18,7 @@ const quizdata=[
         correct:'a'
       }
 ]
-
+const submitBtn=document.getElementById('Submit')
 const questionE = document.getElementById('question')
 const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
@@ -31,8 +31,23 @@ loadQuiz()
 
 function loadQuiz(){
     const currentQuizdata = quizdata[currentQuiz];
-    questionE.innerHTML = currentQuizdata.question;
+    questionE.InnerHTML = currentQuizdata.question;
     
-    currentQuiz++
+    currentQuiz++;
+}
+function getSelected(){
+    Console.log('this is')
+    const answers = document.querySelectorAll('answer')
+    answers.forEach((answer) => {
+        console.log(answers.values)
+    })
 }
 const answers = document.querySelectorAll('answer');
+  
+submitBtn.addEventListener("click", () =>{ currentQuiz++
+        getSelected();
+  //  if(currentQuiz<quizdata.length){ loadQuiz();
+    //  }else{
+    //    alert('enjoy')  ;  }   
+
+     });
