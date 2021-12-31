@@ -12,7 +12,8 @@ const bio=[
 const buttons  = document.querySelector('.submit');
 const buttons2 = document.querySelector('.submit2');
 const selector = document.querySelector('.selector');
-const arr = doc
+const reset = document.querySelector('.reset');
+const arr = document.querySelector('.array')
 function cl(){
     console.log("calling cl");
     person.forEach(element => {
@@ -37,8 +38,22 @@ function total(){
 
 function divin(){
     console.log('divin');
-
+    for (i in person){
+    arr.innerHTML=person[i];}
 }
-selector.addEventListener('click', divin);
+let count=0
+selector.addEventListener('click', () => {
+    if(count<person.length){  
+    arr.innerHTML=person[count];}
+      else
+    arr.innerHTML=count;    
+    count++;
+});
+
+reset.addEventListener('click',()=>{
+      count=0;
+      arr.innerHTML="starting from zero"
+});
+
 buttons.addEventListener('click', cl);
 buttons2.addEventListener('click',total);
