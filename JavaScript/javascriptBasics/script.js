@@ -9,9 +9,10 @@ const bio=[
         school:'RGV'
        }
      ]
-const buttons = document.querySelector('.submit');
-const buttons2=document.querySelector('.submit2');
-
+const buttons  = document.querySelector('.submit');
+const buttons2 = document.querySelector('.submit2');
+const selector = document.querySelector('.selector');
+const arr = doc
 function cl(){
     console.log("calling cl");
     person.forEach(element => {
@@ -33,5 +34,11 @@ function total(){
         console.log(bio[i].age);
     }
 }
+
+function divin(){
+    console.log('divin');
+
+}
+selector.addEventListener('click', divin);
 buttons.addEventListener('click', cl);
 buttons2.addEventListener('click',total);
