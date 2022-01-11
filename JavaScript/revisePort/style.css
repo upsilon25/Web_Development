@@ -1,3 +1,4 @@
+
 .header{
     width: 300px;
     background-color: rgb(250, 248, 255);
@@ -106,4 +107,16 @@ ul>li{
     left: 50;
     margin-bottom: 0;
     font-size: 1.3rem;
+}
+
+/* About */
+.ima{
+    background-image: url("./img/th.jpg");
+    width: 300px;
+    height: 300px;
+    padding:5% ;
+    margin: 5%;
+    background-size: cover;
+    background-position: top;
+
 }
