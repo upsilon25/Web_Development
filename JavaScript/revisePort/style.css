@@ -120,3 +120,41 @@ ul>li{
     background-position: top;
 
 }
+
+.Facts{
+    margin-bottom: 2rem;
+}
+.Facts .tag{
+    font-size: 2rem;
+}
+.port{
+    margin:2rem ,1rem;
+}
+.port .imageport1{
+    background-image: url("./img/bike.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+.port .imageport2{
+    background-image: url("./img/th.jpg");
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+.port .col{
+    margin: 2%;
+    
+}
+.port .col::after{
+    content: '';
+ 
+}
+.port .col:hover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: aqua;
+    z-index: 10;
+}
