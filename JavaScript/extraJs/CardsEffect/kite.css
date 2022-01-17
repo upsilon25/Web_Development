@@ -158,30 +158,53 @@ body{
     background-color: rgb(170, 123, 4);
     overflow: hidden;
 }
-.box5{
+.container5 .box5{
     background-image: url("./assets/img/portfolio/portfolio-1.jpg");
     width: 100%;
     height: 100%;
     background-size: cover;
+    background-color: azure;
+}
+.container5::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(142, 144, 153, 0.1);
+    transition: cubic-bezier(0.55, 0.085, 0.68, 0.53) 200ms;
+}
+.container5:hover::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.527);
 }
 
-.links{
+.container5 .links {
+    z-index: 1000;
     position: absolute;
-    top: 80%;
+    top: 100%;
     left: 0;
     bottom: 0;
     right: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 50px;
-    width: 100%;
+    height: 50;
     background-color: darksalmon;
-    
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 250ms;
 }
-.box5:hover .links{
-    top: 70%;
+
+.container5:hover .links{
+    top:150px;
+    background-color: rgb(200, 243, 227);
 }
+
 .links a{
     text-decoration: none;
 }
